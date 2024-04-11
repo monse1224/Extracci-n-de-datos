@@ -32,3 +32,9 @@ filtro5.to_csv('practica_facturacion_5.csv')
 filtro6 = df.iloc[7001:7099, :  ] 
 print(filtro6)
 filtro6.to_csv('practica_facturacion_6.csv')
+
+df1= pd.read_excel('datos_facturacion.xlsx', index_col=3)
+#print(df1.head())
+
+filtro7=df1.loc[[1.0,2.0], ["FECHAELAB"]]
+print(filtro7)
