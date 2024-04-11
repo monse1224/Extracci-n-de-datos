@@ -16,7 +16,8 @@ filtro2.to_csv('practica_facturacion_2.csv')
 # year-month
 #filtro3=df[ df["FECHA_ENT"].dt.strftime('%Y-%m') == '2019-10']
 # year-month-day
-filtro3=df[ df["FECHA_ENT"].dt.strftime('%Y-%m-%d') == '2019-10-02']
+df['FECHAELAB'] = pd.to_datetime(df['FECHAELAB'])
+filtro3=df[ df["FECHAELAB"].dt.strftime('%Y-%m-%d') == '2019-10-02']
 print(filtro3)
 filtro3.to_csv('practica_facturacion_3.csv')
 
