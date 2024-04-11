@@ -38,3 +38,4 @@ df1= pd.read_excel('datos_facturacion.xlsx', index_col=3)
 
 filtro7=df1.loc[[1.0,2.0], ["FECHAELAB"]]
 print(filtro7)
+filtro7.to_csv('practica_facturacion_7.csv')
