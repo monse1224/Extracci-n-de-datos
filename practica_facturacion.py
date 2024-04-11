@@ -14,3 +14,7 @@ filtro2.to_csv('practica_facturacion_2.csv')
 filtro3=df[df["FECHA_ENT"] == '2022-28-2']
 print(filtro3)
 filtro3.to_csv('practica_facturacion_3.csv')
+
+filtro4=df[(df["CAN_TOT"] < 5951.7)| (df["STATUS"] == "E")]
+print(filtro4)
+filtro4.to_csv('practica_facturacion_4.csv')
