@@ -18,3 +18,7 @@ filtro3.to_csv('practica_facturacion_3.csv')
 filtro4=df[(df["CAN_TOT"] < 5951.7)| (df["STATUS"] == "E")]
 print(filtro4)
 filtro4.to_csv('practica_facturacion_4.csv')
+
+filtro5 = df.iloc[ : , [0, 6, 7,9]]  
+print(filtro5)
+filtro5.to_csv('practica_facturacion_5.csv')
