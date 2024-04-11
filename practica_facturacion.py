@@ -22,3 +22,7 @@ filtro4.to_csv('practica_facturacion_4.csv')
 filtro5 = df.iloc[ : , [0, 6, 7,9]]  
 print(filtro5)
 filtro5.to_csv('practica_facturacion_5.csv')
+
+filtro6 = df.iloc[7001:7099, :  ] 
+print(filtro6)
+filtro6.to_csv('practica_facturacion_6.csv')
